@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <nav class="main-nav glassy">
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-row">
+        <img src="../pic/04.jpg" alt="Taranjot Singh" class="hero-avatar-full" />
+        <div class="hero-text">
+          <h1 class="movie-title">Taranjot Singh</h1>
+          <p class="movie-tagline typewriter">Aspiring Cloud & DevOps Engineer</p>
+          <p class="movie-intro">Welcome to my portfolio — experience my journey like a blockbuster!</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+  <main>
+    <section id="profile" class="fade-in cinematic">
+      <h2>Profile</h2>
+      <p><strong>Hi, I'm Taranjot Singh 👋</strong></p>
+      <p>🚀 <strong>Aspiring Cloud & DevOps Engineer</strong> | AWS | Docker | Linux | Backend Development</p>
+      <p>🌱 Currently exploring <strong>AWS Solutions Architect concepts & Terraform</strong></p>
+      <p>💻 Passionate about <strong>Cloud, DevOps, and Scalable Backend Systems</strong></p>
+      <p>📍 Punjab, India | 🎓 B.E. CSE @ Chitkara University</p>
+      <p>📄 <a href="https://1drv.ms/w/c/8107c622702d9f46/ERZKiJxWD8dDrNtdYiR69TIBy5xN6uClQenCw8CJRvKutQ?e=fRipOE" target="_blank">View My Resume</a></p>
+    </section>
+    <section id="skills">
+      <h2 class="fade-in cinematic">Skills</h2>
+      <div class="skills-tiles">
+        <div class="skill-tile" data-topic="cloud">
+          <span class="skill-tile-icon">☁️</span>
+          <span class="skill-tile-title">Cloud & DevOps</span>
+          <span class="skill-tile-hint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00bfae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1.2"/></svg> Click to view</span>
+        </div>
+        <div class="skill-tile" data-topic="backend">
+          <span class="skill-tile-icon">⚙️</span>
+          <span class="skill-tile-title">Backend</span>
+          <span class="skill-tile-hint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00bfae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1.2"/></svg> Click to view</span>
+        </div>
+        <div class="skill-tile" data-topic="frontend">
+          <span class="skill-tile-icon">💻</span>
+          <span class="skill-tile-title">Frontend</span>
+          <span class="skill-tile-hint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00bfae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1.2"/></svg> Click to view</span>
+        </div>
+        <div class="skill-tile" data-topic="databases">
+          <span class="skill-tile-icon">🗄️</span>
+          <span class="skill-tile-title">Databases</span>
+          <span class="skill-tile-hint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00bfae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1.2"/></svg> Click to view</span>
+        </div>
+        <div class="skill-tile" data-topic="tools">
+          <span class="skill-tile-icon">🛠️</span>
+          <span class="skill-tile-title">Tools & Scripting</span>
+          <span class="skill-tile-hint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00bfae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1.2"/></svg> Click to view</span>
+        </div>
+      </div>
+      <div id="skillModal" class="skill-modal" style="display:none;">
+        <div class="skill-modal-content">
+          <span class="skill-modal-close">&times;</span>
+          <h3 id="modalTopic"></h3>
+          <div id="modalSkills"></div>
+          <div id="modalProjects"></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+  <h2 class="fade-in cinematic">Technical Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3><a href="https://github.com/Taranjot13/smart-task-scheduler" target="_blank">Cloud-Based Web Hosting (AWS)</a></h3>
+          <p>Deployed a Flask app on EC2 with static content on S3, integrated via IAM & AWS CLI.<br><em>Tech: AWS EC2, S3, IAM, Flask, Python, Linux</em></p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Taranjot13/expense-tracker-api" target="_blank">Expense Tracker API</a></h3>
+          <p>Built a RESTful backend with Node.js & MongoDB, featuring CRUD operations, JWT auth & CSV export.<br><em>Tech: Node.js, Express, MongoDB, JWT</em></p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Taranjot13/linux-user-manager" target="_blank">Linux User Manager</a></h3>
+          <p>Bash script for user management: add/delete users, password resets, bulk creation & logs.<br><em>Tech: Linux, Bash, Shell Scripting</em></p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Taranjot13/CafeConnect" target="_blank">CafeConnect</a></h3>
+          <p>Web-based café management system with menu editing, order tracking, and dark/light mode.<br><em>Tech: HTML, CSS, JavaScript</em></p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Taranjot13/Cloud-Hosted-Developer-Portfolio" target="_blank">Cloud-Hosted Developer Portfolio</a></h3>
+          <p>This portfolio! A modern, animated, cloud-ready developer portfolio with AWS, Docker, CI/CD, and a movie-inspired UI.<br><em>Tech: HTML, CSS, JavaScript, AWS, Docker, CI/CD</em></p>
+        </div>
+      </div>
+    </section>
+    <section id="achievements">
+  <h2 class="fade-in cinematic">Achievements & Certifications</h2>
+      <ul>
+        <li>AWS Cloud Solutions Architect Professional Certificate – <strong>Amazon Web Services</strong> (Apr 2025)</li>
+        <li>AWS Educate – <strong>Introduction to Cloud 101</strong> (Jul 2025)</li>
+        <li>AWS Fundamentals Specialization – <strong>Amazon Web Services</strong> (Mar 2025)</li>
+        <li>Networking Essentials – <strong>Cisco Networking Academy</strong> (Jan 2025)</li>
+        <li>Junior Cybersecurity Analyst Career Path – <strong>Cisco</strong> (Jan 2025)</li>
+        <li>Python in Practice – <strong>Chitkara University</strong> (Dec 2023)</li>
+        <li>Basics of JavaScript Programming – <strong>Open Weaver</strong> (Jul 2023)</li>
+      </ul>
+    </section>
+    <section id="contact">
+  <h2 class="fade-in cinematic">Contact & Links</h2>
+      <ul>
+        <li>💼 <a href="https://linkedin.com/in/taranjot13" target="_blank">LinkedIn</a></li>
+        <li>📂 <a href="https://github.com/Taranjot13" target="_blank">GitHub</a></li>
+        <li>📄 <a href="https://1drv.ms/w/c/8107c622702d9f46/ERZKiJxWD8dDrNtdYiR69TIBy5xN6uClQenCw8CJRvKutQ?e=fRipOE" target="_blank">Resume</a></li>
+      </ul>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Taranjot Singh</p>
+  </footer>
+  <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+  </a>
+  <a href="#contact" id="contactMeBtn" class="contact-me-btn" aria-label="Contact Me">
+    <span>Contact Me</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+  </a>
+  <script src="./src/main.js"></script>
+</body>
+</html>
